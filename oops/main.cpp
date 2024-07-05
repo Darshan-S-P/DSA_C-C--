@@ -61,5 +61,63 @@ int main(){
 }
 */
 
-//Scenario with attributes
+//Scenario with attributes with constructor
+/* Function which has same name as the class Constructor has 2 things to do
+1.Construct the object ,In whole programming concept constructors dont have return type
+2.Initialize the object attributes
+Destructor's are only supported in C++  */
+
+/*#include<iostream>
+using namespace std;
+
+class Car{
+    public:
+    string BrandName;
+    int manuDate;
+    Car(string BName,int mDate){
+        BrandName = BName;//this keyword is used to eliminate ambiguity in program
+       manuDate = mDate;//if parameter and attributes are not same then eliminate this keyword
+    }
+    void printDetails(){
+
+    cout<<"Car name is:"<<BrandName<<endl;
+    cout<<"Car manufacturing date is:"<<manuDate<<endl;
+    }
+    };
+int main(){
+    Car c1("BMW",1995);//object posses the atrributes
+    Car c2("Maruti800",1982);
+    c1.printDetails();
+    c2.printDetails();
+    }
+*/
+
+#include<iostream>
+using namespace std;
+
+class Books{
+    public:
+    string title;
+    int copies;
+
+    Books(string Title,int copys){
+        title= Title;
+        copies=copys;
+    }
+    void BookDetails(){
+        cout<<"Book Title"<<title<<endl;
+        cout<<"Book copies sold"<<copies<<endl;
+    }
+
+    };
+
+    int main(){
+        Books b1("ABC",5);
+        Books b2("DEF",6);
+        b1.BookDetails();
+        b2.BookDetails();
+
+    }
+
+
 
