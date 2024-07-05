@@ -105,15 +105,15 @@ class Books{
         copies=copys;
     }
     void BookDetails(){
-        cout<<"Book Title"<<title<<endl;
-        cout<<"Book copies sold"<<copies<<endl;
+        cout<<"Book Title:"<<title<<endl;
+        cout<<"Book copies sold:"<<copies<<endl;
     }
 
     };
 
     int main(){
-        Books b1("ABC",5);
-        Books b2("DEF",6);
+        Books b1("ABC", 5);
+        Books b2("DEF", 6);
         b1.BookDetails();
         b2.BookDetails();
 
