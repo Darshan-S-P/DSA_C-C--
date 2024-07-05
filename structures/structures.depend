@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1720079410 source:d:\dsa_c,c++\structures\main.cpp
+	<iostream>
+	<string.h>
+
